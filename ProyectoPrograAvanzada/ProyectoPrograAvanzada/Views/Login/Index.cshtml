@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Ingresar", "Login", FormMethod.Post))
+{
+
+<div>
+
+    <p>
+        @Html.DisplayNameFor(m => m.Users)
+        @Html.TextBoxFor(m => m.Users)
+    </p>
+
+    <p>
+        @Html.DisplayNameFor(m => m.Password)
+        @Html.TextBoxFor(m => m.Password)
+    </p>
+
+</div>
+
+<div>
+
+    <button type=" submit " class="btn btn-success">Ingresar</button>
+    <button type=" submit " class="btn btn-success">Salir</button>
+
+</div>
+
+}
