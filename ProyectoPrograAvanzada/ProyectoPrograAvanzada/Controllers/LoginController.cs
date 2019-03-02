@@ -8,6 +8,8 @@ namespace ProyectoPrograAvanzada.Controllers
 {
     public class LoginController : Controller
     {
+        PointsEntities bd = new PointsEntities();
+
         // GET: Login
         public ActionResult Index()
         {
@@ -22,7 +24,9 @@ namespace ProyectoPrograAvanzada.Controllers
         [HttpPost]
         public ActionResult Ingresar(Models.LoginModel model)
         {
+
             return View(); //Por mientras
+            
         }
     }
 
